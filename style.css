@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box; 
+}
+
+/* 
+------------------------------------------------   Header   -----------------------------------------------
+*/
+nav {
+    background-color: #e3bc0b;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    line-height: 70px;
+    padding: 0 100px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  nav ul {
+    float: right;
+    margin-right: 40px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .check {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 950px) {
+    label .logo {
+      padding-left: 50px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 850px) {
+    .check {
+      display: block;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      height: 60vh;
+      background-color: #e3bc0b;
+      top: 80px;
+      transition: all 0.5s;
+      left: -100%;
+      text-align: center;
+    }
+    nav ul li {
+      display: block;
+      color: black
+    }
+    nav ul li a {
+      font-size: 20px;
+      background: none;
+    }
+    #check:checked~ ul
+  {
+      left: 0;
+  }
+  .check{
+      margin-right: 20px;
+  }
+  }
+  .main-nav ul li a:hover{
+      color: rgb(0, 136, 240);
+  }
+
+
+/* 
+------------------------------------------------   Demo   -----------------------------------------------
+*/
+.bg-image{
+    text-align: center;
+}
+.bg-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.demo-heading{
+    padding-top: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.demo-container{
+    /* background: linear-gradient(45deg, rgb(237, 255, 196), rgb(255, 251, 0)); */
+    background-color: #e3bc0b;
+
+}
+
+.flex-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.flex-box{
+    width: 250px;
+    height: 150px;
+    /* background: linear-gradient(#ffffff,#3f3f3f); */
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.profile-img{
+    /* width: 100px;
+    clip-path: circle(); */
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+}
+
+.btn {
+    display: block; /* Make the button a block element */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.footer-sec{
+padding: 300px;
+}
